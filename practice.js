@@ -172,7 +172,7 @@ function finder(arr) {
 //3
 
 finder(arr);
-console.log(finder(arr));
+// console.log(finder(arr));
 
 ////////// PROBLEM 8 //////////
 
@@ -228,7 +228,13 @@ function addItem(myGroceryList, item) {
 */
 
 //Code Here
-
+function maker() {
+  let newArr = [];
+  for (let i = 0; i <= 215; i++) {
+    newArr[i] = i + 1;
+  }
+  return newArr;
+}
 ////////// PROBLEM 10 //////////
 
 // Do not edit the code below.
@@ -242,7 +248,22 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 */
 
 //Code Here
+// function addTen(numbers) {
+//   return (numbers += 10);
+// }
 
+// let newArr = numbers.map(addTen);
+// console.log(newArr);
+
+function addTen(arr) {
+  for (i = 0; i < arr.length; i++) {
+    arr[i] = parseInt(arr[i]);
+    arr[i] += 10;
+  }
+  return arr;
+}
+
+// console.log(arr);
 ////////// PROBLEM 11 //////////
 
 // Do not edit the code below.
